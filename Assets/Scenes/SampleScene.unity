@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 932190082}
   - component: {fileID: 932190087}
   - component: {fileID: 932190088}
+  - component: {fileID: 932190089}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -352,6 +353,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balaClonada: {fileID: 3918055073032889053, guid: c023a6b526e2cc04894e230bf5c85f68,
+    type: 3}
+--- !u!114 &932190089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932190081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e595fcc80b61594687075e148f68641, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombaClonada: {fileID: 4745292607162291624, guid: afb41089c0120e54fbb780b7d9de96c9,
     type: 3}
 --- !u!1 &963194225
 GameObject:
