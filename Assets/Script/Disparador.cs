@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Disparador : MonoBehaviour
 {
+    
+    public GameObject prefab;
+    public string nombreDeAccion;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +17,8 @@ public class Disparador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown (nombreDeAccion)){
+            Instantiate (prefab);
+        }
     }
 }
