@@ -319,6 +319,7 @@ GameObject:
   - component: {fileID: 579384061}
   - component: {fileID: 579384060}
   - component: {fileID: 579384059}
+  - component: {fileID: 579384063}
   m_Layer: 0
   m_Name: Puerta (1)
   m_TagString: Untagged
@@ -400,6 +401,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &579384063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579384058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbe62f08b491f34fa8bdbb2055c34da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetivo: {fileID: 756810598}
 --- !u!1 &756810598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,11 +1015,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1700296188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78f7fb9808bd12e47b18376a01ef33f3, type: 3}
+  m_Script: {fileID: 11500000, guid: db011ec0ee700404e888bad30839a315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 5
-  velocidadRotacion: 50
+  velocidadFrontal: 5
+  velocidadLateral: 5
 --- !u!1 &1741636510
 GameObject:
   m_ObjectHideFlags: 0
