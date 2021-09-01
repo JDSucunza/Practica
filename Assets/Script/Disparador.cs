@@ -18,7 +18,7 @@ public class Disparador : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown (nombreDeAccion)){
-            Instantiate (prefab);
+            Instantiate (prefab, transform.position,transform.rotation);
         }
     }
 }
