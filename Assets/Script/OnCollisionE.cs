@@ -20,8 +20,10 @@ public class OnCollisionE : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(){
+    void OnCollisionEnter(Collision c){
             Destroy (gameObject);
+            Destroy (c.gameObject);
+            
     }
 
 }
