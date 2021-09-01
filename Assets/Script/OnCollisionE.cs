@@ -5,7 +5,7 @@ using UnityEngine;
 public class OnCollisionE : MonoBehaviour
 {
     
-    public GameObject objetoADestruir;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class OnCollisionE : MonoBehaviour
     }
 
     void OnCollisionEnter(){
-            Destroy (objetoADestruir);
+            Destroy (gameObject);
     }
 
 }
