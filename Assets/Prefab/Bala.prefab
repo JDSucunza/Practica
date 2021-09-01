@@ -110,7 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidadX: 0
   velocidadY: 0
-  velocidadZ: -3
+  velocidadZ: 3
 --- !u!114 &-6655814836922597198
 MonoBehaviour:
   m_ObjectHideFlags: 0
