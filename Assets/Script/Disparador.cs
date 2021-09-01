@@ -5,7 +5,11 @@ using UnityEngine;
 public class Disparador : MonoBehaviour
 {
     
+    public float tamanioPrefab;
+
     public GameObject prefab;
+
+    public GameObject jugador;
     public string nombreDeAccion;
     
     // Start is called before the first frame update
@@ -18,7 +22,9 @@ public class Disparador : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown (nombreDeAccion)){
-            Instantiate (prefab, transform.position,transform.rotation);
+            Instantiate (prefab, jugador.transform.position + Vector3.forward * tamanioPrefab,jugador.transform.rotation);
         }
     }
+    
+
 }
