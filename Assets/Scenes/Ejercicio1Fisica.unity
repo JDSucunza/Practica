@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 579384061}
   - component: {fileID: 579384060}
   - component: {fileID: 579384059}
-  - component: {fileID: 579384063}
+  - component: {fileID: 579384064}
   m_Layer: 0
   m_Name: Puerta (1)
   m_TagString: Untagged
@@ -401,7 +401,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &579384063
+--- !u!114 &579384064
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 579384058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fbe62f08b491f34fa8bdbb2055c34da, type: 3}
+  m_Script: {fileID: 11500000, guid: 9155a45dd40d7fe4aadb1b1112a6e53d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objetivo: {fileID: 756810598}
@@ -1072,7 +1072,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 86.05731
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1098,7 +1098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741636510}
   m_LocalRotation: {x: -0.36973456, y: -0.4988269, z: 0.5203774, w: -0.58623844}
-  m_LocalPosition: {x: 117.55, y: 108, z: 103.95}
+  m_LocalPosition: {x: 115.7, y: 108.3, z: 103.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
