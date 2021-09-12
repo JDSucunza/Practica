@@ -6,7 +6,7 @@ public class Disparador : MonoBehaviour
 {
     
     public float tamanioPrefab;
-
+    public int balas;
     public GameObject prefab;
 
     public GameObject jugador;
@@ -21,8 +21,9 @@ public class Disparador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown (nombreDeAccion)){
+        if (Input.GetButtonDown (nombreDeAccion) && balas > 0){
             Instantiate (prefab, jugador.transform.position + Vector3.forward * tamanioPrefab,jugador.transform.rotation);
+            balas = balas - 1;
         }
     }
     
