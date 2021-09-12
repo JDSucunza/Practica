@@ -17,8 +17,13 @@ public class Turbo : MonoBehaviour
     }
 
     void OnTriggerEnter (Collider c){
+        
+        // Agregar condicion de velocidad maxima para acelerar!!
         MovimientoPersonaje m = c.gameObject.GetComponent <MovimientoPersonaje>();
-        m.velocidadMovimiento= m.velocidadMovimiento + 50;
+        if (m.velocidadMovimiento < 5){
+        m.velocidadMovimiento= m.velocidadMovimiento + 5;
+        }
         Destroy (gameObject); 
+        
     }
 }
