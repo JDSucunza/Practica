@@ -433,6 +433,7 @@ GameObject:
   - component: {fileID: 1533842852}
   - component: {fileID: 1533842851}
   - component: {fileID: 1533842857}
+  - component: {fileID: 1533842858}
   - component: {fileID: 1533842856}
   m_Layer: 0
   m_Name: Cube
@@ -543,8 +544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f7fb9808bd12e47b18376a01ef33f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 1
-  velocidadRotacion: 40
+  velocidadMovimiento: 6
+  velocidadRotacion: 10
 --- !u!114 &1533842857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,6 +558,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68189ddc23b5e184181b807fb39201be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1533842858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533842850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d5a6c793bf3b445a45a9542bbeadbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cantidad: 5
+  escudo: 20
 --- !u!1 &1713636393
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +586,7 @@ GameObject:
   - component: {fileID: 1713636395}
   - component: {fileID: 1713636394}
   - component: {fileID: 1713636399}
+  - component: {fileID: 1713636400}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -602,7 +618,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713636393}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -680,3 +696,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd35af881c52d774e8605cb5a0a4d0e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1713636400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713636393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c717c82222258654faf166cb764feb7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danio: 7
