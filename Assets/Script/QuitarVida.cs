@@ -22,8 +22,15 @@ public class QuitarVida : MonoBehaviour
         Vida vidaDelObjeto = c.gameObject.GetComponent <Vida>();
         if (vidaDelObjeto.escudo >= danio){
             vidaDelObjeto.escudo = vidaDelObjeto.escudo - danio;
-        } else {
-            vidaDelObjeto.cantidad = vidaDelObjeto.cantidad - danio;
         }
+        if (vidaDelObjeto.escudo < danio){
+            float danioFinal = danio - vidaDelObjeto.escudo;
+            vidaDelObjeto.cantidad = vidaDelObjeto.cantidad - danioFinal;
+        }
+        if (vidaDelObjeto.escudo == 0){
+            vidaDelObjeto.cantidad = vidaDelObjeto.cantidad - danio;
+        } 
+            
+        
     }
 }
