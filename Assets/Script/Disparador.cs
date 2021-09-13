@@ -21,10 +21,18 @@ public class Disparador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown (nombreDeAccion) && balas > 0){
-            Instantiate (prefab, jugador.transform.position + Vector3.forward * tamanioPrefab,jugador.transform.rotation);
-            balas = balas - 1;
+        if (Input.GetButtonDown (nombreDeAccion)){
+            InvokeRepeating ("Disparo",0, 0.2f);
         }
+
+        if (Input.GetButtonUp (nombreDeAccion) || balas == 0){
+            CancelInvoke ("Disparo");
+        }
+    }
+
+    void Disparo (){
+        Instantiate (prefab, jugador.transform.position + Vector3.forward,jugador.transform.rotation);
+            balas = balas - 1;
     }
     
 
