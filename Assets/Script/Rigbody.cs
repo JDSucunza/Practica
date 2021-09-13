@@ -18,6 +18,9 @@ public class Rigbody : MonoBehaviour
 
     void OnCollisionEnter (Collision c){
         Rigidbody rb = c.gameObject.GetComponent <Rigidbody>();
-        rb.AddRelativeForce (0,0,100);
+        if (c.gameObject.tag == "Fisica"){
+            rb.AddRelativeForce (0,0,100);
+        }
+        
     }
 }
