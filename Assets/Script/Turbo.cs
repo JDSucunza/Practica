@@ -20,7 +20,7 @@ public class Turbo : MonoBehaviour
         
         // Agregar condicion de velocidad maxima para acelerar!!
         MovimientoPersonaje m = c.gameObject.GetComponent <MovimientoPersonaje>();
-        if (m.velocidadMovimiento < 5){
+        if (m.velocidadMovimiento < 5 && c.gameObject.name == "jugador"){
         m.velocidadMovimiento= m.velocidadMovimiento + 5;
         }
         Destroy (gameObject); 
