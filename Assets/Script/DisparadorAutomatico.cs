@@ -7,10 +7,14 @@ public class DisparadorAutomatico : MonoBehaviour
     
     public GameObject prefab;
 
+    
+    void Awake (){
+        InvokeRepeating ("Disparar", 2, 2);
+    }
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate (prefab);    
+            
     }
 
     // Update is called once per frame
@@ -18,4 +22,9 @@ public class DisparadorAutomatico : MonoBehaviour
     {
         
     }
+
+    void Disparar (){
+        Instantiate (prefab);
+    }
+
 }
