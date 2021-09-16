@@ -17,8 +17,10 @@ public class EjObjeto1 : MonoBehaviour
     void Update()
     {
         if (Input.GetButtonDown ("Fire1")){
-             private int gameManager = manager.GetComponent <EjManager1>();
-           // gameManager.numero = gameManager.numero + 1;
+             
+            
+            EjManager1 gameManager = manager.gameObject.GetComponent <EjManager1>();
+            gameManager.numero = gameManager.numero + 1;
         }
     }
 }
